@@ -1,0 +1,100 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+.w-90 {
+  width: 90% !important;
+}
+
+.mw-10 {max-width: 10% !important;}
+.mw-20 {max-width: 20% !important;}
+.mw-30 {max-width: 30% !important;}
+.mw-40 {max-width: 40% !important;}
+.mw-50 {max-width: 50% !important;}
+.mw-60 {max-width: 60% !important;}
+.mw-70 {max-width: 70% !important;}
+.mw-80 {max-width: 80% !important;}
+.mw-90 {max-width: 90% !important;}
+.mw-100 {max-width: 100% !important;}
+
+.navbar {
+  font-family: 'Avenir Next Cyr';
+  .container {
+    max-width: 100%;
+  }
+  .navbar-brand {
+    font-weight: 700;
+  }
+  .nav-item {
+    font-weight: 500;
+  }
+  .form-inline {
+    input {
+      border: none;
+      border-bottom: 1px solid $gray1;
+      box-shadow: none;
+      border-radius: 0;
+      &:active, &:hover {
+        outline: none;
+        border-bottom: 1px solid $gray2;
+      }
+    }
+    button {
+      border: none;
+      border-bottom: 1px solid $green1;
+      box-shadow: none;
+      border-radius: 0;
+      color: black;
+      &:hover {
+        background: $green1;
+        color: white;
+      }
+    }
+  }
+}
+
+header {
+  margin-top: 56px;
+  height: calc(100vh - 56px);
+  .home-content {
+    h1, p, button {
+      padding: 10px 0;
+    }
+  }
+}
+
+.block_about {
+  background: $gray0;
+  padding: 40px;
+  border-radius: 10px;
+  .stick-top {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+  }
+  .stick-bottom {
+    position: absolute;
+    transform: rotate(180deg);
+    left: -40px;
+    bottom: -40px;
+  }
+  .card-title {
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  .card {
+    background: transparent;
+    border: 0;
+    padding: 0 40px;
+    .card-img {
+      padding-bottom: 50px;
+    }
+    .card-title {
+      padding: 0;
+    }
+  }
+}
